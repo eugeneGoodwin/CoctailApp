@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/action_ordinary_drink"
+            android:title="@string/ordinary_drink"
+            android:icon="@drawable/ordinary_drink_icon"
+    />
+    <item
+            android:id="@+id/action_cocktail"
+            android:title="@string/cocktail"
+            android:icon="@drawable/cocktail_icon"
+    />
+    <item
+            android:id="@+id/action_alcoholic"
+            android:title="@string/alcoholic"
+            android:icon="@drawable/alcoholic_icon"
+    />
+    <item
+            android:id="@+id/action_no_alcoholic"
+            android:title="@string/no_alcoholic"
+            android:icon="@drawable/no_alcoholic_icon"
+    />
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/alcoholicMotionLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:showPaths="false"
+        tools:showPaths="true"
+        app:layoutDescription="@xml/alcoholic_motion"
+        android:background="@color/background_alcoholic">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alcoholicList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alcoholicHeader"/>
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+            android:id="@+id/alcoholicHeader"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_arc_cropDirection="outside"
+            app:shape_arc_height="26dp"
+            app:shape_arc_position="bottom">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/alcoholic_drink"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:background="@drawable/radial" />
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/alcoholicHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="23sp"
+            android:elevation="4dp"
+            android:gravity="center_vertical|start"
+            android:text="@string/alcoholic"
+            android:shadowColor="#3E3E3E"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textColor="@android:color/white"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

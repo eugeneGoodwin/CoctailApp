@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CoctailApp</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="ordinary_drink">Ordinary drink</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="alcoholic">Alcoholic</string>
+    <string name="no_alcoholic">No alcoholic</string>
+    <string name="drinks_load_success">Drinks load success</string>
+    <string name="drink_load_success">Drink load success</string>
+</resources>
